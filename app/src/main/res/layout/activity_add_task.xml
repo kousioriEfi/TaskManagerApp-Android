@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etShortName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Short name (max 20)"
+            android:maxLength="20"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description (max 150)"
+            android:maxLength="150"
+            android:minLines="3"/>
+
+        <EditText
+            android:id="@+id/etDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration hours (>0)"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Difficulty (0-10)"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location (optional)"/>
+
+        <Button
+            android:id="@+id/btnPickStartNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set start time = now + 1 min" />
+
+        <TextView
+            android:id="@+id/tvStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start: not set"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Task" />
+
+    </LinearLayout>
+</ScrollView>
